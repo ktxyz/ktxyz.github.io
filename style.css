@@ -3,34 +3,174 @@ html, body {
     margin: 0;
 }
 
-body {
-    min-width: 100vw;
-    min-height: 100vh;
-
-    font-family: 'Ubuntu Mono', 'Cascadia Code', monospace;
+@font-face {
+    font-family: CascadiaAsset;
+    src: url('assets/CascadiaCode.woff2'),
+         url('assets/CascadiaCode.ttf') format('truetype');
 }
 
-.full-centered {
+.flex-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    height: 100vh;
+    justify-content: space-evenly;
 }
 
-.big-text {
-    max-width: min(800px, 90vw);
-    font-size: 2rem;
+.flex-container > div {
+    width: 50vw;
 }
 
-.horizontal-list {
+.huge-text {
+    font-size: 3rem;
+
+    margin-left: 5rem;
+    margin-top: 5rem;
+
+    font-family: 'CascadiaAsset', 'Ubuntu Mono', "Consolas", "Courier New", monospace;
+}
+
+.huge-text > h1 {
+    margin: 0;
+}
+
+.about-list {
+    font-weight: 900;
+
+    font-size: 1.5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+
+    font-family: 'CascadiaAsset', 'Ubuntu Mono', "Consolas", "Courier New", monospace;
+
+}
+
+.about-list > ul {
     list-style: none;
     padding: 0;
 }
 
-.horizontal-list > li {
+.about-list > ul > li {
+    padding: .4rem;
+    margin: .4rem;
+    background: #adadad;
+    display: inline-block;
+
+    font-weight: 900 !important;
+}
+
+.check {
+    font-weight: 900 !important;
+
     text-align: center;
-    font-size: 1.4rem;
+    margin-top: 6rem;
+    font-size: .9rem;
+
+    font-family: 'CascadiaAsset', 'Ubuntu Mono', "Consolas", "Courier New", monospace;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .flex-container {
+        display: block;
+    }
+
+    .flex-container > div {
+        width: unset;
+    }
+
+    .huge-text{
+        margin: 0;
+        margin: auto;
+        margin-top: 3rem;
+
+        text-align: center;
+    }
+
+    .about-list {
+        max-width: 600px;
+        margin: auto;
+        margin-top: 4rem;
+    }
+
+    .check {
+        margin-top: 3rem;
+    }
+}
+
+
+.ue4 {
+    background: rgb(23, 26, 49) !important;
+    color: white;;
+}
+
+.django {
+    background: rgb(68, 183, 139) !important;
+}
+
+.linux {
+    background: #19B5FE !important;
+}
+
+.artist {
+    color: white;
+    background: #C3272B !important;
+}
+
+.cook {
+    background: #FFA400 !important;
+}
+
+
+.links-arr {
+    display: flex;
+    justify-content: center;
+}
+
+.link > div {
+    margin: 2rem;
+    max-width: 300px;
+}
+
+.link,
+.link > div > h5,
+.link:hover > div > h5,
+.link:focus > div > h5,
+.link:active > div > h5 {
+    text-decoration: none;
+    color: black;
+}
+
+
+.link > div > h5 {
+    font-size: 1rem;
+    font-weight: 900;;
+    font-family: 'CascadiaAsset', 'Ubuntu Mono', "Consolas", "Courier New", monospace;
+
+}
+
+.link > div > img {
+    border-radius: .4rem;
+    max-width: 100px;
+    max-height: 100px;
+    transition: all .2s ease-in-out;
+}
+
+.link:hover > div > img {
+    transform: scale(1.2);
+}
+
+.link2 > div > img {
+    border-radius: .4rem;
+    max-width: 200px;
+    max-height: 200px;
+    transition: all .2s ease-in-out;
+}
+
+.link2:hover > div > img {
+    transform: scale(2);
+}
+
+footer {
+    text-align: center;
+    font-family: 'CascadiaAsset', 'Ubuntu Mono', "Consolas", "Courier New", monospace;
+    font-weight: 900;
+    padding: 1rem;
 }
