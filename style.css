@@ -1,20 +1,21 @@
-html, body {
+html,
+body {
     padding: 0;
-    margin: 0;
+    margin : 0;
 }
 
 @font-face {
     font-family: CascadiaAsset;
-    src: url('assets/CascadiaCode.woff2'),
-         url('assets/CascadiaCode.ttf') format('truetype');
+    src        : url('assets/CascadiaCode.woff2'),
+        url('assets/CascadiaCode.ttf') format('truetype');
 }
 
 .flex-container {
-    display: flex;
+    display        : flex;
     justify-content: space-evenly;
 }
 
-.flex-container > div {
+.flex-container>div {
     width: 50vw;
 }
 
@@ -22,36 +23,36 @@ html, body {
     font-size: 3rem;
 
     margin-left: 5rem;
-    margin-top: 5rem;
+    margin-top : 5rem;
 
     font-family: 'CascadiaAsset', 'Ubuntu Mono', "Consolas", "Courier New", monospace;
 }
 
-.huge-text > h1 {
+.huge-text>h1 {
     margin: 0;
 }
 
 .about-list {
     font-weight: 900;
 
-    font-size: 1.5rem;
+    font-size   : 1.5rem;
     margin-right: 5rem;
-    margin-top: 2rem;
+    margin-top  : 2rem;
 
     font-family: 'CascadiaAsset', 'Ubuntu Mono', "Consolas", "Courier New", monospace;
 
 }
 
-.about-list > ul {
+.about-list>ul {
     list-style: none;
-    padding: 0;
+    padding   : 0;
 }
 
-.about-list > ul > li {
-    padding: .4rem;
-    margin: .4rem;
+.about-list>ul>li {
+    padding   : .4rem;
+    margin    : .4rem;
     background: #adadad;
-    display: inline-block;
+    display   : inline-block;
 
     font-weight: 900 !important;
 }
@@ -61,7 +62,7 @@ html, body {
 
     text-align: center;
     margin-top: 6rem;
-    font-size: .9rem;
+    font-size : .9rem;
 
     font-family: 'CascadiaAsset', 'Ubuntu Mono', "Consolas", "Courier New", monospace;
 }
@@ -72,23 +73,23 @@ html, body {
         display: block;
     }
 
-    .flex-container > div {
+    .flex-container>div {
         width: unset;
     }
 
-    .huge-text{
-        margin: 0;
-        margin: auto;
+    .huge-text {
+        margin    : 0;
+        margin    : auto;
         margin-top: 3rem;
-        font-size: 2.7rem;
+        font-size : 2.7rem;
 
 
         text-align: center;
     }
 
     .about-list {
-        max-width: 600px;
-        margin: auto;
+        max-width : 600px;
+        margin    : auto;
         margin-top: 4rem;
     }
 
@@ -100,7 +101,8 @@ html, body {
 
 .ue4 {
     background: rgb(23, 26, 49) !important;
-    color: white;;
+    color     : white;
+    ;
 }
 
 .django {
@@ -112,7 +114,7 @@ html, body {
 }
 
 .artist {
-    color: white;
+    color     : white;
     background: #C3272B !important;
 }
 
@@ -122,58 +124,118 @@ html, body {
 
 
 .links-arr {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap      : wrap;
 }
 
-.link > div {
-    margin: 2rem;
+.link>div {
+    margin   : 2rem;
     max-width: 300px;
 }
 
 .link,
-.link > div > h5,
-.link:hover > div > h5,
-.link:focus > div > h5,
-.link:active > div > h5 {
+.link>div>h5,
+.link:hover>div>h5,
+.link:focus>div>h5,
+.link:active>div>h5 {
     text-decoration: none;
-    color: black;
+    color          : black;
 }
 
 
-.link > div > h5 {
-    font-size: 1rem;
-    font-weight: 900;;
+.link>div>h5 {
+    font-size  : 1rem;
+    font-weight: 900;
     font-family: 'CascadiaAsset', 'Ubuntu Mono', "Consolas", "Courier New", monospace;
 
 }
 
-.link > div > img {
+.link>div>img {
     border-radius: .4rem;
-    max-width: 100px;
-    max-height: 100px;
-    transition: all .2s ease-in-out;
+    max-width    : 100px;
+    max-height   : 100px;
+    transition   : all .2s ease-in-out;
 }
 
-.link:hover > div > img {
+.links-arr-small .link {
+    margin-top: -1rem;
+}
+
+.links-arr-small h5 {
+    margin-top: .5rem;
+}
+
+.links-arr-small .link>div>img {
+    border-radius: .4rem;
+    max-width    : 50px;
+    max-height   : 50px;
+    transition   : all .2s ease-in-out;
+}
+
+.links-arr-small .link>div>h5 {
+    font-size: .9rem;
+}
+
+.link:hover>div>img {
     transform: scale(1.2);
 }
 
-.link2 > div > img {
+.link2>div>img {
     border-radius: .4rem;
-    max-width: 200px;
-    max-height: 200px;
-    transition: all .2s ease-in-out;
+    max-width    : 200px;
+    max-height   : 200px;
+    transition   : all .2s ease-in-out;
 }
 
-.link2:hover > div > img {
+
+.link3>div>img {
+    border-radius: .4rem;
+    min-width    : 200px;
+    min-height   : 200px;
+    max-width    : 200px;
+    max-height   : 200px;
+    transition   : all .2s ease-in-out;
+}
+
+.link2:hover>div>img {
     transform: scale(2);
 }
 
 footer {
-    text-align: center;
+    text-align : center;
     font-family: 'CascadiaAsset', 'Ubuntu Mono', "Consolas", "Courier New", monospace;
     font-weight: 900;
-    padding: 1rem;
+    padding    : 1rem;
+}
+
+
+.flex-container {
+    position: relative;
+}
+
+.sketches {
+    position: absolute;
+    left    : 0;
+
+    z-index: -1;
+}
+
+.img-fluid {
+    max-width: calc(min(50vw, 300px));
+}
+
+.img-1-white {
+    transform: translateX(420px) rotate(26deg);
+}
+
+.img-4-white {
+    max-width: calc(min(50vw, 250px));
+    transform: translate(calc(80vw - 250px), 350px) rotate(-36deg);
+}
+
+
+.img-6-white {
+    max-width: calc(min(50vw, 200px));
+    transform: translate(-5vw, 320px) rotate(-150deg);
 }
