@@ -70,7 +70,8 @@ body {
 
 @media screen and (max-width: 1200px) {
     .flex-container {
-        display: block;
+        display : block;
+        position: relative;
     }
 
     .flex-container>div {
@@ -95,6 +96,25 @@ body {
 
     .check {
         margin-top: 3rem;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .img-1-white {
+        transform: translate(-20px, -100px) rotate(-26deg) !important;
+    }
+
+    .img-4-white {
+        max-width: 125px !important;
+        transform: translate(calc(10rem - 125px), 250px) rotate(36deg) !important;
+    }
+
+
+    .img-6-white {
+        max-width: 220px !important;
+        transform: translate(10rem, 420px) rotate(150deg) !important;
     }
 }
 
